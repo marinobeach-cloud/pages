@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-        - image: marinobeach/pages:2.0
+        - image: marinobeach/pages:pipeline
           name: pages
           ports:
             - containerPort: 8080
