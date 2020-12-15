@@ -51,6 +51,7 @@ jobs:
           aws-region: ap-south-1
       - name: EKS Login
         run: |
+          kubectl config get-contexts
           aws eks --region ap-south-1 update-kubeconfig --name dees-cloud
           kubectl config get-contexts
           kubectl apply -f deployment/pages-namespace.yaml
